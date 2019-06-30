@@ -1,0 +1,16 @@
+PODS:
+  - YZUtils (0.1.0)
+
+DEPENDENCIES:
+  - YZUtils (from `../`)
+
+EXTERNAL SOURCES:
+  YZUtils:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YZUtils: 090fbc4643305dab2d568d0246defd0603f26b87
+
+PODFILE CHECKSUM: 6cb1d2f027d85fb37151532af0d7b3282decfcfd
+
+COCOAPODS: 1.5.3

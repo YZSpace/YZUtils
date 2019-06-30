@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DC074BB22C8A59D00AF8763 /* YZStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC074BA22C8A59D00AF8763 /* YZStringUtils.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,7 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F4C7C54D06A8C2ADDCF5F9C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0DC074B922C8A59D00AF8763 /* YZStringUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZStringUtils.h; sourceTree = "<group>"; };
+		0DC074BA22C8A59D00AF8763 /* YZStringUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZStringUtils.m; sourceTree = "<group>"; };
+		1F4C7C54D06A8C2ADDCF5F9C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YZUtils_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YZUtils_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,8 +61,8 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		73077E044325CC89B691C2D3 /* YZUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YZUtils.podspec; path = ../YZUtils.podspec; sourceTree = "<group>"; };
-		747E3FDD3A79DE687FCE6EEF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		73077E044325CC89B691C2D3 /* YZUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YZUtils.podspec; path = ../YZUtils.podspec; sourceTree = "<group>"; };
+		747E3FDD3A79DE687FCE6EEF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7BC0111ACF4D9A99C07E968D /* Pods_YZUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YZUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		881080A0E25734EB0B759709 /* Pods-YZUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZUtils_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YZUtils_Example/Pods-YZUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +98,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DC074B422C8A58200AF8763 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0DC074B922C8A59D00AF8763 /* YZStringUtils.h */,
+				0DC074BA22C8A59D00AF8763 /* YZStringUtils.m */,
+			);
+			name = Classes;
+			path = ../../YZUtils/Classes;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +145,7 @@
 		6003F593195388D20070C39A /* Example for YZUtils */ = {
 			isa = PBXGroup;
 			children = (
+				0DC074B422C8A58200AF8763 /* Classes */,
 				6003F59C195388D20070C39A /* YZAppDelegate.h */,
 				6003F59D195388D20070C39A /* YZAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -257,6 +271,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -368,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* YZAppDelegate.m in Sources */,
+				0DC074BB22C8A59D00AF8763 /* YZStringUtils.m in Sources */,
 				6003F5A7195388D20070C39A /* YZViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
