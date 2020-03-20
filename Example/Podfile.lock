@@ -1,16 +1,37 @@
 PODS:
-  - YZUtils (0.1.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - YZUtils (0.1.1):
+    - AFNetworking (~> 3.2)
 
 DEPENDENCIES:
   - YZUtils (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   YZUtils:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YZUtils: 090fbc4643305dab2d568d0246defd0603f26b87
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  YZUtils: c86e68361d2cfc3a5025af82b90e723d774befd8
 
 PODFILE CHECKSUM: 6cb1d2f027d85fb37151532af0d7b3282decfcfd
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.1
